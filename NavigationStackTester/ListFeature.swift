@@ -40,6 +40,10 @@ public struct ListFeature {
                 return .none
             }
         }
+        
+        .forEach(\.path, action: \.path) {
+            Path()
+        }
     }
     
     
